@@ -1,0 +1,153 @@
+﻿
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('banner.jpeg');
+  background-size: cover; /* Фон на весь экран */
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Зафиксировать фон */
+  transform: scale(0.8); /* Уменьшает всё содержимое на 80% */
+  transform-origin: center; /* Центрирует масштабирование */
+}
+
+
+.login-box {
+  background-color: #2d2d2d;
+  color: #ffffff;
+  width: 800px; /* Увеличиваем ширину */
+  padding: 80px; /* Увеличиваем отступы */
+  border-radius: 12px;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); /* Улучшили тень */
+  display: flex;
+  flex-direction: column;
+  gap: 40px; /* Уменьшили разрыв между элементами */
+  position: relative;
+}
+
+.login-icon {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  width: 50px; /* Увеличили иконку */
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 30px; /* Сдвинули чуть ниже */
+  left: 20px;
+  font-size: 22px; /* Увеличили размер символа */
+  color: #ffffff;
+
+}
+
+
+.login-text {
+  font-size: 18px; /* Чуть больше текст */
+  margin: 0;
+  color: #eaeaea;
+}
+
+.input-line {
+  border: none;
+  border-bottom: 2px solid #555555; /* Толще линия */
+  background: none;
+  outline: none;
+  height: 40px; /* Увеличили высоту */
+  font-size: 18px; /* Крупнее текст */
+  color: #ffffff;
+  width: 100%;
+  padding-left: 70px; /* Больше отступ для стрелки */
+  box-sizing: border-box;
+}
+
+.input-line::placeholder {
+  color: #888888;
+  font-size: 16px; /* Больше шрифт для плейсхолдера */
+}
+
+
+.login-button {
+  background-color: #a11212;
+  color: #ffffff;
+  border: none;
+  padding: 12px 24px; /* Увеличили размер кнопки */
+  cursor: pointer;
+  align-self: flex-end;
+  font-size: 16px; /* Крупнее текст */
+  border-radius: 6px; /* Чуть больше скругление */
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: #d11a1a;
+}
+
+/* Блок "Нет аккаунта?" и кнопка */
+.register-container {
+  display: flex; /* Flexbox для горизонтального расположения */
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 15px; /* Отступ сверху */
+  gap: 15px; /* Больше отступ между текстом и кнопкой */
+}
+
+.acc-text {
+  margin: 0;
+  font-size: 16px; /* Чуть больше шрифт */
+  color: #eaeaea;
+}
+
+.register-button {
+  background-color: transparent;
+  border: 2px solid #a11212; /* Более заметная рамка */
+  color: #a11212;
+  padding: 8px 18px; /* Увеличили размер кнопки */
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.register-button:hover {
+  background-color: #a11212;
+  color: #ffffff;
+}
+/* =======================РЕГИСТРАЦИЯ============================  */
+/* =======================РЕГИСТРАЦИЯ============================  */
+
+.password-line {
+  border: none;
+  border-bottom: 2px solid #555555; /* Толще линия */
+  background: none;
+  outline: none;
+  height: 40px; /* Увеличили высоту */
+  font-size: 18px; /* Крупнее текст */
+  color: #ffffff;
+  width: 100%;
+  padding-left: 70px; /* Больше отступ для стрелки */
+  box-sizing: border-box;
+
+
+}
+
+
+.logo {
+  position: absolute; /* Абсолютное позиционирование */
+  top: 10px; /* Расстояние от верхнего края */
+  left: 50%; /* Сдвиг на 50% от левого края */
+  transform: translateX(-50%); /* Выравнивание по центру */
+  transform: scale(0.3); /* Уменьшает всё содержимое на 80% */
+  transform-origin: center; /* Центрирует масштабирование */
+}
+
+
+
+
+  

@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoe Store</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="Facing.css">
+      <link rel="stylesheet" href="navigation.css">
+</head>
+<body>
+    <header>
+           <!-- ===============ЛОГОТИП=============== -->
+        <div class="logo">FOR ALL TIME</div>
+
+        <div class="search-bar">
+            <input type="text" placeholder="Пошук...">
+            <button type="submit">
+                <img src="search1.png" alt="Search" width="20">
+            </button>
+        </div>
+        <div class="divider"></div>
+
+        <div class="icons">
+           
+              <!-- ===================КОРЗИНА====================   -->
+            
+            <div class="cart"> 
+                <a href="">КОШИК</a>
+                <img src="cart1.png" alt="Cart">
+            </div>
+            
+            <!-- =====================НАВИГАЦИЯ=======================  --> 
+            <div class="menu" onclick="toggleSidebar()">
+                <img src="menu.png" alt="">
+            </div>
+            
+            <!-- =================Выдвигающееся меню===================== -->
+            <div class="sidebar" id="sidebar">
+                <div class="close-btn" onclick="toggleSidebar()">×</div>
+                <a href="auto.html">LOGIN</a>
+                <a href="#">PAYDAY</a>
+                <a href="#">FASHON</a>
+                <a href="#">NEW ITEMS</a>
+            </div>
+        </div>
+
+    
+        
+    </header>
+ 
+     <!-- БАННЕР  -->
+    <img src="banner.jpeg" alt="Logo" class="responsive-image">
+
+    
+    <script>
+    function toggleSidebar() {
+    const sidebar = document.getElementById("sidebar");
+    sidebar.classList.toggle("open");
+}
+
+
+
+    </script>
+    
+</body>
+</html>
