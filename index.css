@@ -147,7 +147,26 @@ body {
   transform-origin: center; /* Центрирует масштабирование */
 }
 
+.error-box {
+  background-color: #a11212;
+  color: #ffffff;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 6px;
+  transition: all 0.5s ease-in-out; /* Плавная анимация */
+  opacity: 0; /* Скрыто изначально */
+  transform: translateY(-10px); /* Сдвиг вверх */
+  position: relative;
+  max-width: 80%;
+  margin: 10px 0;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Когда ошибка должна быть видимой */
+.error-box.show {
+  opacity: 1;
+  transform: translateY(0); /* Перемещение в нормальное положение */
+}
 
 
-
-  
